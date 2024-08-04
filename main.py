@@ -134,7 +134,7 @@ async def lookup(ctx, phone_number: str):
     # Préparez l'URL de la requête avec le numéro de téléphone et la clé API.
     url = f"https://api.numlookupapi.com/v1/validate/{phone_number}"
     headers = {
-        'x-api-key': client
+        'x-api-key': NUMLOOKUPAPI_KEY  # La clé API doit être une chaîne de caractères.
     }
 
     try:
